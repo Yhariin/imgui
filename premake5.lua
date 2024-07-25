@@ -28,15 +28,15 @@ project "ImGui"
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "On"
-    optimize "Debug"
+		optimize "Debug"
 
 	filter "configurations:Release"
 		runtime "Release"
-    symbols "On"
+		symbols "On"
 		optimize "On"
 
 	filter "configurations:Release"
 		runtime "Release"
-    symbols "Off"
+		symbols "Off"
 		optimize "On"
   
