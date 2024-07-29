@@ -2,6 +2,7 @@ project "ImGui"
 	kind "StaticLib"
 	language "C++"
     staticruntime "On"
+	flags { "MultiProcessorCompile" }
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("obj/" .. outputdir .. "/%{prj.name}")
@@ -35,7 +36,7 @@ project "ImGui"
 		symbols "On"
 		optimize "On"
 
-	filter "configurations:Release"
+	filter "configurations:Distribution"
 		runtime "Release"
 		symbols "Off"
 		optimize "Full"
