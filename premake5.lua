@@ -31,12 +31,12 @@ project "ImGui"
 		optimize "Debug"
 
 	filter "configurations:Release"
-		runtime "Release"
+		runtime "Debug"
 		symbols "On"
 		optimize "On"
 
 	filter "configurations:Release"
 		runtime "Release"
 		symbols "Off"
-		optimize "On"
+		optimize "Full"
   
